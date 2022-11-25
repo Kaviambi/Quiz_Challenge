@@ -37,7 +37,7 @@ var questions = [
 ];
 //Varaibles 
 
-var timerEl = document.getElementById('countdown');
+var timerEl = document.querySelector(".countdown");
 var start_btn = document.querySelector(".start_quiz");
 var quiz_box = document.querySelector(".quiz-box");
 var que_text = quiz_box.querySelector(".que_text");
@@ -82,6 +82,7 @@ function countdown() {
 start_btn.addEventListener('click', () => {
     quiz_box.classList.remove("inactive");
     start_btn.classList.add("inactive");
+    timerEl.classList.remove("inactive");
     countdown();
 })
 
@@ -127,13 +128,17 @@ next_btn.addEventListener('click', () => {
         //console.log("questions completed");
         quiz_box.classList.add("inactive");
         result_box.classList.remove("inactive");
+        //Timer will stop when quiz is completed 
+        timerEl.classList.add("inactive");
        right_ans_r.innerText = right_answers;
 
     }
 //Last question will have finish button instead of next 
     if(questions.length-1 == que_index) {
         next_btn.innerText ="Finish";
+       
     }
+    
 })
 
 function UserAnswer(answer){
@@ -159,6 +164,7 @@ function UserAnswer(answer){
 exit.addEventListener('click',() => {
     start_btn.classList.remove("inactive");
     result_box.classList.add("inactive");
+    timerEl.classList.add("inactive");
     Reset();
 
 })

@@ -11,8 +11,8 @@ body{
 
 .start_quiz{
     position: absolute;
-    top:50%;
-    left:50%;
+    top:40%;
+    left:40%;
     border: 2px solid white;
   
     padding: 10px 30px;
@@ -21,8 +21,9 @@ body{
 }
 
 .start_quiz:hover {
-    background: grey;
+    background:rgb(155, 129, 57);
 }
+
 
 .inactive{
     display: none;
@@ -55,21 +56,25 @@ body{
 }
 
 .quiz-box .option {
-    position: absolute;
+    position: relative;
     top: 6px;
     right: 10px;
-    font-size: 30px;
+    font-size: 12px;
+    
 }
 
-
+.quiz-box .option:hover{
+    background:rgb(155, 129, 57);
+}
 
 .quiz-footer{
     margin-top: 50px;
+    justify-content: space-between;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+    
+    
+   
 }
 
 .count_que .total_que{
@@ -85,19 +90,20 @@ body{
 }
 
 .next-btn:hover{
-    background: white;
+    background:rgb(155, 129, 57);
 }
 
 .result-box{
     position: absolute;
-    top:50px;
-    left: 50px;
-    color:white;
-    background: grey;
+    top:40%;
+    left: 40%;
+    color:rgb(12, 1, 1);
+    border: 2px solid rgb(253, 252, 252);
 }
 
 .result-box .result{
-    padding: 20px;
+    padding: 40px;
+   
 }
 
 .result-box h3{
@@ -106,21 +112,21 @@ body{
 }
 
 
-.reult-footer{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 30px;
+.result-footer{
+    display:flex;
+  align-items: center;
+    padding-bottom: 10px;
 }
 
-.reult-footer .again-quiz .result-footer .exit{
+ .result-footer .exit{
 
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    
+    padding: 10px 10px;
+    font-size: 25px;
+    cursor: pointer; 
 }
 
-.result-footer .exit:hover{
-    background:white;
+.result-footer:hover{
+    background:rgb(155, 129, 57);
 }
+
 
