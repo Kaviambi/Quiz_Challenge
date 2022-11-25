@@ -13,7 +13,7 @@ var questions = [
     },
     
     {
-        question: "1. What is CSS stands for?",
+        question: "2. What is CSS stands for?",
         answer: "Cascading Style Sheet",
         options: [
             "Style sheet",
@@ -24,7 +24,7 @@ var questions = [
     },
 
     {
-        question: "1.What is the extension for Javascript?",
+        question: "3.What is the extension for Javascript?",
         answer: "js",
         options: [
             "CSS",
