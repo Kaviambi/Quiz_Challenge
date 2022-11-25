@@ -45,6 +45,6 @@ Here is the screenshot of the completed quiz challenge.
 ![Screenshot](./Images/Capture1.JPG)
 ![Screenshot](./Images/Capture2.JPG)
 
-Here is the link for the deployed page-
+Here is the link for the deployed page- https://kaviambi.github.io/Quiz_Challenge/
 
-Here is the link for the GitHub Page-
+Here is the link for the GitHub Page- https://github.com/Kaviambi/Quiz_Challenge.git
